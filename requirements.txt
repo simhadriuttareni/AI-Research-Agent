@@ -1,0 +1,14 @@
+﻿fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+langchain
+langchain-groq
+tavily-python
+requests
+sqlalchemy
+psycopg2-binary
+streamlit
+python-dotenv
+python-multipart
+httpx
