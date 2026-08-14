@@ -1,7 +1,7 @@
 ﻿# Start PostgreSQL
 docker start research_db 2>$null
 if ($LASTEXITCODE -ne 0) {
-    docker run --name research_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=1234 -e POSTGRES_DB=research -p 5432:5432 -d postgres:15
+    docker run --name db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD -e POSTGRES_DB=research -p 5432:5432 -d postgres:15
 }
 
 # Start Backend
